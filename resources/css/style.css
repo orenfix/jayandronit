@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+
+html {
+	font-size: 16px;
+}
+
+body, .banner, footer {
+	background: rgb(245,245,245);
+}
+
+body {
+	font-family: 'Dosis', Helvetica, sans-serif;
+	color: rgb(90,90,90);
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.banner img {
+	height: 20rem;
+	width: auto;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(25,204,149);
+}
+
+@media only screen and (max-width: 800px) {
+	.banner {
+		flex-direction: column;
+	}
+
+	.banner img {
+		height: 12rem;
+	}
+}
+
+
+.lists {
+	display: flex;
+	justify-content: space-around;
+	padding: 4rem 1rem;
+	border: 1px solid rgb(200,200,200);
+}
+
+h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.list {
+	width: 40%;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.list img {
+	width: 5rem;
+	height: auto;
+	margin-left: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+	.lists {
+		border-left: 0;
+		border-right: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.lists {
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.8rem;
+	}
+
+	.list {
+		width: 100%;
+	}
+
+	.list:first-child {
+		margin-bottom: 2rem;
+	}
+}
+
+a, a:visited {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	display: block;
+	max-width: 486px;
+	padding: 1rem 2rem;
+	margin: 0 auto .8rem auto;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	background-color: rgb(77,173,37);
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: white;
+	background-color: rgb(53,94,160);
+}
+
+footer {
+	padding: 1rem;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: .3rem;
+}
+
+p {
+	font-size: .9rem;
+	line-height: 1.1rem;
+	margin-bottom: 2rem;
+}
+
+p:last-child {
+	margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+	p:first-child {
+		text-align: left;
+	}
+}
