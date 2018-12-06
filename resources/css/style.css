@@ -55,38 +55,14 @@ img {
 }
 
 .video-container {
-	height: 200px;
 	padding: 2rem 2rem 0 2rem;
-	display: flex;
-	justify-content: center;
-}
-
-video {
-	height: 100%;
-	width: auto;
-}
-
-button {
 	align-self: center;
-	width: 5rem;
-	padding: 0.5rem 0.25rem;
-	margin: 0.5rem;
-	font-size: 1rem;
-	font-weight: 400;
-	background-color: rgba(188,43,255,0.7);
-	border-radius: 5px;
-	border: 0;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: rgb(188,43,255);
 }
 
 @media only screen and (max-width: 900px) {
-	video {
-		width: 250px;
-		padding: 0;
+	.video-container {
+		width: 200px;
+		height: 112.5px;
 	}
 }
 
