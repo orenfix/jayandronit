@@ -274,6 +274,7 @@ img {
 }
 
 .mawwiage {
+	display: none;
 	position: absolute;
 	right: 1rem;
 	bottom: 10rem;
@@ -364,10 +365,6 @@ header, footer {
 
 	.content {
 		width: auto;
-	}
-
-	h3 {
-		font-size: 1.6rem;
 	}
 
 	.content ul, .content p {
