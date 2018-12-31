@@ -15,17 +15,18 @@
 		<script src='./resources/js/respond.min.js' type='text/javascript' ></script>
 		<script type="text/javascript" src="./resources/js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="./resources/js/main.js"></script>
-		<title>Jay &amp; Ronit</title>
+		<title>Jay &amp; Ronit | Event Details</title>
 	<head>
 
 	<body>
+		<div class='skip_nav'><a href='#main'>Skip navigation</a></div>
 		<header>
-			<h1>Jay &amp; Ronit</h1>
+			<h1><a href='index.html' title='home'>Jay &amp; Ronit</a></h1>
 			<button class='menu fas fa-bars fa-2x' aria-haspopup='menu'></button>
 			<nav>
 				<ul role='menu'>
 					<li><a href='location.html' title='location'>LOCATION</a></li>
-					<li><a href='event_details.html' title='event details'>EVENT DETAILS</a></li>
+					<li><a class='selected' title='event details'>EVENT DETAILS</a></li>
 					<li><a href='https://www.okcupid.com' target='_blank' title='how we met'>HOW WE MET</a></li>
 					<li><a href='travel_information.html' title='travel information'>TRAVEL INFORMATION</a></li>
 					<li><a href='accommodations.html' title='accommodations'>ACCOMMODATIONS</a></li>
@@ -34,8 +35,19 @@
 			</nav>
 		</header>
 
-		<main class='index'>
-			<h2>March 31, 2019</h2>
+		<main id='main' class='event_details overlay'>
+			<h2>Event Details</h2>
+			<div class='content'>
+				<h3>31 March 2019</h3>
+				<p>Ceremony begins at 1 pm</p>
+				<p>There will not be a sit-down meal; however, a cocktail hour with passed hors d'oeuvres begins after the ceremony, with a small-plate buffet to follow</p>
+				<p>Please – no gifts, just bring yourself, your family and joy. <b>Lots of joy.</b></p>
+			</div>
+			<button class='mawwiage'>
+				<img src='./resources/images/mawwiage.png'/>
+				<i class='play fas fa-play fa-3x'></i>
+				<audio><source src='./resources/audio/mawwiage.mp3' type='audio/mpeg'></audio>
+			</button>
 		</main>
 
 		<footer>
