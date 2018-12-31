@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gilda+Display|Source+Sans+Pro:300,600');
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display|Source+Sans+Pro:300,600,700');
 
 /******* FONTS *******/
 
@@ -278,21 +278,28 @@ img {
 	max-width: 500px;
 }
 
-.mawwiage {
-	display: none;
-	position: absolute;
-	right: 1rem;
-	bottom: 10rem;
+/******** MAWWIAGE ********/
+
+.event_details .content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.mawwiage  {
+	font-weight: 700;
+	font-size: 2.2rem;
+	color: rgb(255,93,17);
 	cursor: pointer;
+	align-self: flex-end;
+	padding: 1rem;
 }
 
-.mawwiage img {
-	max-width: 400px;
-	padding: 0;
-	margin: 0;
+.flex-grow-hack {
+	flex-grow: 1;
 }
 
-.mawwiage:hover .play {
+.mawwiage:hover .play, .mawwiage:focus .play {
 	display: block;
 }
 
@@ -382,12 +389,12 @@ header, footer {
 	}
 
 	.mawwiage {
-		max-width: 300px;
+		font-size: 1.6rem;
 	}
 
 	.play {
 		left: 9rem;
-		bottom: 6rem;
+		bottom: 7rem;
 	}
 }
 
