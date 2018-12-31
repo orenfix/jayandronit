@@ -13,10 +13,6 @@ $(document).ready(function(){
         }
     });
 
-    $('audio').addEventListener('loadedmetadata', function() {
-        $('audio').currentTime = someSeekTime;
-        }, false);
-
     $('.mawwiage').mouseover (function() {
         if ( $('audio')[0].ended ) {
             $('.play').removeClass('fa-pause').addClass('fa-play');
