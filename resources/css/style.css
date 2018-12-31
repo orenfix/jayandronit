@@ -334,10 +334,6 @@ header, footer {
 		display: block;
 	}
 
-	nav {
-		flex-basis: -1;
-	}
-
 	nav ul {
 		display: none;
 		flex-direction: column;
