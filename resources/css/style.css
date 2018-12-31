@@ -106,6 +106,10 @@ header {
 	border-bottom: 1px solid;
 }
 
+nav {
+	flex-basis: 100%;
+}
+
 nav ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -137,6 +141,7 @@ h1 {
 }
 
 main, .overlay {
+	display: block;
 	position: relative;
 	background: transparent no-repeat center / cover;
 	width: 100%;
