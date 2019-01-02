@@ -13,26 +13,38 @@ $(document).ready(function(){
         }
     });
 
-    $('.mawwiage').mouseover (function() {
+/*$('.mawwiage').mouseover (function() {
         if ( $('audio')[0].ended ) {
-            $('.play').removeClass('fa-pause').addClass('fa-play');
+            $('.mawwiage').removeClass('pause').addClass('play');
         } else if ( $('audio')[0].paused ) {
-            $('.play').removeClass('fa-pause').addClass('fa-play');
+            $('.mawwiage').removeClass('pause').addClass('play');
         } else {
-            $('.play').removeClass('fa-play').addClass('fa-pause');
+            $('.mawwiage').removeClass('play').addClass('pause');
+        }
+    });*/
+
+$('.mawwiage').bind('mouseover focus', function() {
+        if ( $('audio')[0].ended ) {
+            $('.mawwiage').removeClass('pause').addClass('play');
+        } else if ( $('audio')[0].paused ) {
+            $('.mawwiage').removeClass('pause').addClass('play');
+        } else {
+            $('.mawwiage').removeClass('play').addClass('pause');
         }
     });
 
     $('.mawwiage').click(function() {
         if ( $('audio')[0].paused ) {
             $('audio')[0].play();
-            $('.play').removeClass('fa-play').addClass('fa-pause');
+            $('.mawwiage').removeClass('play').addClass('pause');
         } else {
             $('audio')[0].pause();
             $('audio')[0].currentTime=0;
-            $('.play').removeClass('fa-pause').addClass('fa-play');
+            $('.mawwiage').removeClass('pause').addClass('play');
         }
     });
+
+    $('#copyright').text((new Date()).getFullYear());
  });
    
 

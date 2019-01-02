@@ -8,7 +8,7 @@ html {
 	color: white;
 }
 
-.content ul, .content p {
+.content ul, .content p, .mawwiage {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 	font-size: 1.6rem;
@@ -27,11 +27,7 @@ h1, h1 a, h1 a:visited, h1 a:hover, h1 a:focus, h1 a:active, h2, footer {
 	text-decoration: none;
 }
 
-.play {
-	color: white;
-}
-
-a, a:visited {
+a, a:visited, .mawwiage {
 	color: white;
 	text-decoration: none;
 }
@@ -40,7 +36,7 @@ a, a:visited {
 	color: rgb(35,54,86);
 }
 
-a:hover, a:focus, a:active {
+a:hover, a:focus, a:active, .mawwiage:hover, .mawwiage:focus {
 	text-decoration: underline;
 }
 
@@ -54,7 +50,7 @@ nav a, nav a:visited, .menu {
 	text-decoration: none;
 }
 
-.accommodations a, .accommodations a:visited {
+.accommodations a, .accommodations a:visited, .mawwiage {
 	font-weight: 600;
 }
 
@@ -68,6 +64,7 @@ button {
 	background: transparent;
 	border: 0;
 	padding: 0;
+	cursor: pointer;
 }
 
 .skip_nav a {
@@ -136,7 +133,6 @@ h1 {
 	display: none;
 	padding: 0.5rem 0.7rem;
 	border-radius: 3px;
-	cursor: pointer;
 	z-index: 1;
 }
 
@@ -250,10 +246,6 @@ h3 {
 	text-align: left;
 }
 
-.content a {
-
-}
-
 .content p {
 	text-align: center;
 	max-width: 720px;
@@ -278,39 +270,35 @@ img {
 	max-width: 500px;
 }
 
-/******** MAWWIAGE ********/
-
-.event_details .content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: 100vh;
-}
-
-.mawwiage  {
-	font-weight: 700;
-	font-size: 2.2rem;
-	color: rgb(255,93,17);
-	cursor: pointer;
-	align-self: flex-end;
-	padding: 1rem;
-}
-
-.flex-grow-hack {
-	flex-grow: 1;
-}
-
-.mawwiage:hover .play, .mawwiage:focus .play {
+.mawwiage {
 	display: block;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.play {
-	display: none;
-	text-align: center;
-	opacity: .8;
-	position: absolute;
-	left: 12rem;
-	bottom: 9rem;
+.mawwiage::after {
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Font Awesome 5 Free'; 
+	font-weight: 900; 
+	content: '\f04b';
+	position: relative;
+	left: .5rem;
+	visibility: hidden;
+}
+
+.mawwiage.play:hover::after, .mawwiage.play:focus::after {
+	content: '\f04b';
+	visibility: visible;
+}
+
+.mawwiage.pause:hover::after, .mawwiage.pause:focus::after {
+	content: '\f04c';
+	visibility: visible;
 }
 
 footer {
@@ -388,18 +376,9 @@ header, footer {
 		font-size: 1.4rem;
 		line-height: 1.6rem;
 	}
-
-	.mawwiage {
-		font-size: 1.6rem;
-	}
-
-	.play {
-		left: 9rem;
-		bottom: 7rem;
-	}
 }
 
-/*
+/*********** FOR CREATING WEB APP ICON AND FAVICON **************
 header.icon {
 	height: 500px;
 	justify-content: center;
