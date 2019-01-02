@@ -13,16 +13,6 @@ $(document).ready(function(){
         }
     });
 
-/*$('.mawwiage').mouseover (function() {
-        if ( $('audio')[0].ended ) {
-            $('.mawwiage').removeClass('pause').addClass('play');
-        } else if ( $('audio')[0].paused ) {
-            $('.mawwiage').removeClass('pause').addClass('play');
-        } else {
-            $('.mawwiage').removeClass('play').addClass('pause');
-        }
-    });*/
-
 $('.mawwiage').bind('mouseover focus', function() {
         if ( $('audio')[0].ended ) {
             $('.mawwiage').removeClass('pause').addClass('play');
